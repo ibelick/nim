@@ -2,16 +2,21 @@
 import { TextMorph } from '@/components/ui/text-morph'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 import { useEffect, useState } from 'react'
+import { FaRegCopy } from "react-icons/fa6";
 
 function CopyButton() {
   const [text, setText] = useState('Copy')
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : ''
+  const [currentUrl, setCurrentUrl] = useState('')
 
   useEffect(() => {
     setTimeout(() => {
       setText('Copy')
     }, 2000)
   }, [text])
+
+  useEffect(() => {
+    setCurrentUrl(window.location.href)
+  }, [])
 
   return (
     <button
@@ -23,7 +28,6 @@ function CopyButton() {
       type="button"
     >
       <TextMorph>{text}</TextMorph>
-      <span>URL</span>
     </button>
   )
 }
@@ -43,9 +47,11 @@ export default function LayoutBlogPost({
         }}
       />
 
-      <div className="absolute right-4 top-24">
-        <CopyButton />
-      </div>
+<div className="absolute right-4 top-28 border border-zinc-500 px-3 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 shadow-md hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all">
+  <CopyButton />
+</div>
+
+
       <main className="prose prose-gray mt-24 pb-20 prose-h4:prose-base dark:prose-invert prose-h1:text-xl prose-h1:font-medium prose-h2:mt-12 prose-h2:scroll-m-20 prose-h2:text-lg prose-h2:font-medium prose-h3:text-base prose-h3:font-medium prose-h4:font-medium prose-h5:text-base prose-h5:font-medium prose-h6:text-base prose-h6:font-medium prose-strong:font-medium">
         {children}
       </main>

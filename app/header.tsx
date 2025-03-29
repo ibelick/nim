@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="mb-8 flex items-center justify-between">
-      <div>
+    <header className="mb-8 flex items-center justify-between ">
+      <div className='flex items-center gap-2'>
         <Link href="/" className="font-medium text-black dark:text-white">
           Julien Nim
-        </Link>
+        </Link> -
         <TextEffect
           as="p"
           preset="fade"
@@ -18,6 +18,18 @@ export function Header() {
         >
           Design Engineer
         </TextEffect>
+      </div>
+      <div className='flex items-center gap-4 justify-between'>
+      <Link href="/solutions" className="text-black dark:text-white">
+          Solutions
+        </Link>
+        <Link href="/about" className="text-black dark:text-white">
+          About
+        </Link>
+        <Link href="/blog" className="text-black dark:text-white">
+          Blog
+        </Link>
+
       </div>
     </header>
   )
