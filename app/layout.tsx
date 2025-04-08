@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { Header } from './header'
-import { Footer } from './footer'
+import Header from './header'
+import Footer from './footer'
 import { ThemeProvider } from 'next-themes'
 
 export const viewport: Viewport = {
@@ -12,9 +12,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Nim - Personal website template',
+  title: 'Sushil - Personal website',
   description:
-    'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+    'A dedicated and professional software engineering working on tech industry for more than 4 years.',
 }
 
 const geist = Geist({
@@ -44,10 +44,10 @@ export default function RootLayout({
           defaultTheme="system"
         >
           <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
-            <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
-              <Header />
-              {children}
-              <Footer />
+            <Header />
+            <div className="relative mx-auto flex w-full max-w-screen-lg flex-1 flex-col justify-between px-4 pt-20">
+              <div className="flex h-full w-full">{children}</div>
+              {/* <Footer /> */}
             </div>
           </div>
         </ThemeProvider>
