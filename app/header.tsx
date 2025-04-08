@@ -1,15 +1,26 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+import Navigation from '@/components/ui/Navigation'
 
 export default function Header() {
+  const pathname = usePathname()
+  const isHome = pathname === '/'
+
+  if (isHome) return null
+
   return (
-    <header className="mb-8 flex items-center justify-end px-5 py-4">
-      <div className="flex justify-end">
+    <header className="sticky top-0 z-50 w-full bg-white/90 py-2 shadow-sm backdrop-blur-lg dark:bg-zinc-900/80">
+      <div className="flex justify-between px-6 py-4">
         <Link
-          href="/about-me"
-          className="font-medium text-black dark:text-white"
+          href="/"
+          className="text-lg font-semibold text-zinc-800 dark:text-white"
         >
-          About Me
+          Sushil.dev
         </Link>
+        <Navigation />
       </div>
     </header>
   )
