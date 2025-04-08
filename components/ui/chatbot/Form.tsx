@@ -1,19 +1,24 @@
-export default function Form({
-  handleSubmit,
+'use client'
+
+import React, { memo } from 'react'
+
+import { FormProps } from '@/constants/types'
+
+const Form: React.FC<FormProps> = ({
   input,
   handleInputChange,
+  handleSubmit,
   handleKeyDown,
   status,
-}: any) {
+}) => {
   return (
-    <form onSubmit={handleSubmit} className="mt-8">
+    <form onSubmit={handleSubmit} className="mt-4">
       <div className="flex items-center space-x-2 rounded-full bg-gray-800 p-2 shadow-lg">
-        {/* Textarea for input */}
         <textarea
           value={input}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          placeholder="Ask anything related to Our developer..."
+          placeholder="Ask anything about Sushil..."
           rows={1}
           className="flex-1 resize-none bg-transparent p-2 text-sm text-white placeholder-gray-400 focus:outline-none"
         />
@@ -45,3 +50,5 @@ export default function Form({
     </form>
   )
 }
+
+export default memo(Form)

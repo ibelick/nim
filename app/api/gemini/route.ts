@@ -1,6 +1,7 @@
 import { createGoogleGenerativeAI } from '@ai-sdk/google'
 import { streamText } from 'ai'
-import { NextResponse } from 'next/server'
+
+import { chatHistory } from '@/data/gemini/chatConfig'
 
 const google = createGoogleGenerativeAI({
   apiKey: process.env.GOOGLE_API_KEY,
@@ -23,12 +24,12 @@ export async function POST(request: Request) {
       )
     }
 
-    const result = await streamText({ model, messages })
+    const fullMessages = [
+      ...JSON.parse(JSON.stringify(chatHistory)),
+      ...messages,
+    ]
 
-    console.log(
-      'result',
-      JSON.stringify(result.toDataStreamResponse(), null, 2),
-    )
+    const result = await streamText({ model, messages: fullMessages })
 
     return result.toDataStreamResponse()
   } catch (error) {

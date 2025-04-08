@@ -2,12 +2,15 @@
 
 import { useChat } from '@ai-sdk/react'
 
+import { initialMessages } from '@/data/gemini/chatConfig'
+
 import Form from './Form'
 import MessageBox from './messageBox'
 
 export default function Page() {
   const { messages, input, handleSubmit, handleInputChange, status } = useChat({
     api: '/api/gemini',
+    initialMessages,
   })
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
