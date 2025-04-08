@@ -22,7 +22,10 @@ export default function Page() {
 
   return (
     <div>
-      <MessageBox messages={messages} />
+      <MessageBox
+        messages={messages}
+        isAIMessageLoading={status === 'submitted'}
+      />
       <Form
         handleSubmit={handleSubmit}
         input={input}
