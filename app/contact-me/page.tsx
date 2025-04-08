@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <div className="flex w-full flex-col items-center px-4 py-12 text-white">
-      <p className="mb-12 text-center text-gray-400">
+      <p className="mb-12 text-center text-2xl text-gray-400">
         I'd love to hear from you! Fill out the form below and I'll be in touch
         soon.
       </p>
