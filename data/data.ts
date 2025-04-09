@@ -23,8 +23,12 @@ type BlogPost = {
 }
 
 type SocialLink = {
-  label: string
-  link: string
+  LINKEDIN: string
+  GITHUB: string
+  TWITTER: string
+  FACEBOOK: string
+  EMAIL: string
+  INSTAGRAM: string
 }
 
 export const PROJECTS: Project[] = [
@@ -97,23 +101,13 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ]
 
-export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
-  },
-  {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
-  },
-]
+export const SOCIAL_LINKS: SocialLink = {
+  LINKEDIN: 'https://www.linkedin.com/in/sushil-subedi-42220b19b/',
+  GITHUB: 'https://github.com/SushilSubedi?tab=repositories',
+  TWITTER: 'https://x.com/SushilSubedi_',
+  INSTAGRAM: 'https://www.instagram.com/sushil__subedi/',
+  EMAIL: 'sushilsubedi151@gmail.com',
+  FACEBOOK: 'https://www.facebook.com/sushil.subedi.169/',
+}
 
 export const EMAIL = 'your@email.com'

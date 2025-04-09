@@ -92,7 +92,6 @@ I am a Software Engineer with 4 years of experience in frontend and backend tech
 - **Phone**: +977-9847269843  
 - **LinkedIn**: [Sushil Subedi LinkedIn](https://www.linkedin.com/in/sushil-subedi-42220b19b/)  
 - **GitHub**: [Sushil Subedi GitHub](https://github.com/SushilSubedi?tab=repositories)  
-- **Portfolio**: [sushilsubedi.com.np](https://sushilsubedi.com.np)  
 - **Blog**: [sushilsubedi.com.np/blog](https://sushilsubedi.com.np/blog)  
 - **Location**: Banasthali, Kathmandu, Nepal  
 - **Languages**: English, Nepali, Hindi  
@@ -135,7 +134,7 @@ export const initialMessages: Message[] = [
   {
     role: 'assistant',
     id: Date.now().toString(),
-    content: `👋 Hello! I'm **SushilAI**, here to help you with anything related to **Sushil Subedi** — a software engineer with 4+ years of experience.  
+    content: `🙏 Namaste! I'm **Sushil AI**, here to help you with anything related to **Sushil Subedi** — a software engineer with 4+ years of experience.  
 Feel free to ask about his background, projects, skills, or contact details!`,
   },
 ]

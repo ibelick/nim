@@ -41,7 +41,7 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
+    <div className="mx-auto max-w-4xl px-4 pt-8">
       <h1 className="mb-10 text-4xl font-bold text-zinc-900 dark:text-white">
         Projects
       </h1>

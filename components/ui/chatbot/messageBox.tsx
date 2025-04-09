@@ -30,17 +30,12 @@ function MessageBox({ messages, isAIMessageLoading }: MessageBoxProps) {
                 className={`max-w-full ${message.role === 'user' ? 'md:max-w-[50%]' : 'md:max-w-[80%]'}`}
               >
                 <div
-                  className={`w-full rounded-lg p-3 shadow-sm ${
+                  className={`w-full rounded-lg p-3 text-base shadow-sm ${
                     message.role === 'user'
                       ? 'bg-blue-600 text-white'
                       : 'bg-gray-700 text-white'
                   }`}
                 >
-                  {!isAIMessageLoading && (
-                    <p className="font-bold text-gray-200">
-                      {message.role === 'user' ? 'Guest' : 'Sushil AI'}:
-                    </p>
-                  )}
                   {message.parts.map((part: Part, index: number) => {
                     switch (part.type) {
                       case 'text':

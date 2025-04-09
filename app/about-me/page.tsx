@@ -6,7 +6,7 @@ import React from 'react'
 
 const AboutMePage = () => {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16">
+    <div className="mx-auto max-w-3xl px-4 pt-8">
       {/* Header */}
       <div className="mb-10">
         <h1 className="mb-2 text-4xl font-bold text-zinc-900 dark:text-white">
