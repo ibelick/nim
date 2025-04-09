@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4 md:w-1/2">
           <div className="flex flex-wrap items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400">
             <Link
-              href="/terms"
+              href="/terms-and-policies"
               className="hover:text-zinc-900 dark:hover:text-zinc-100"
             >
               Terms & policies
@@ -35,6 +35,7 @@ const Footer = () => {
               © 2020—{new Date().getFullYear()}{' '}
               <Link
                 href="https://github.com/sushilsubedi"
+                target="_blank"
                 className="underline"
               >
                 Sushil Subedi
@@ -52,7 +53,6 @@ const Footer = () => {
               </Link>
               .
             </p>
-            <p>sushilsubedi151@gmail.com</p>
           </div>
         </div>
 
