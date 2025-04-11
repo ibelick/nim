@@ -1,7 +1,6 @@
 export default function SitemapPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      {/* Header Section */}
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-extrabold text-zinc-900 md:text-5xl dark:text-white">
           Sitemap
@@ -12,7 +11,6 @@ export default function SitemapPage() {
         </p>
       </header>
 
-      {/* Sitemap List */}
       <section className="rounded-lg bg-white p-6 shadow-lg dark:bg-zinc-800">
         <ul className="space-y-6 text-zinc-600 dark:text-zinc-400">
           <li className="flex flex-col sm:flex-row sm:items-center sm:justify-between">

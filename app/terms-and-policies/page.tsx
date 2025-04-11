@@ -1,7 +1,6 @@
 export default function TermsAndPoliciesPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      {/* Header Section */}
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-extrabold text-zinc-900 md:text-5xl dark:text-white">
           Terms & Policies
@@ -12,9 +11,7 @@ export default function TermsAndPoliciesPage() {
         </p>
       </header>
 
-      {/* Policies Section */}
       <section className="rounded-lg bg-white p-6 shadow-lg dark:bg-zinc-800">
-        {/* Terms of Use */}
         <article className="mb-8">
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white">
             Terms of Use
@@ -32,7 +29,6 @@ export default function TermsAndPoliciesPage() {
           </ul>
         </article>
 
-        {/* Privacy Policy */}
         <article className="mb-8">
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white">
             Privacy Policy
@@ -55,7 +51,6 @@ export default function TermsAndPoliciesPage() {
           </ul>
         </article>
 
-        {/* Cookie Policy */}
         <article className="mb-8">
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white">
             Cookie Policy
@@ -105,7 +100,6 @@ export default function TermsAndPoliciesPage() {
         </article>
       </section>
 
-      {/* Footer Note */}
       <footer className="mt-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
         <p>Last updated: April 08, 2025</p>
         <p>
