@@ -7,9 +7,9 @@ export default function Home() {
       <header className="flex justify-end md:justify-center">
         <Navigation />
       </header>
-      <main className="mt-4">
+      <main className="mt-8">
         <section className="mx-auto my-8 text-center">
-          <h1 className="mb-4 text-3xl font-bold sm:text-5xl md:text-7xl">
+          <h1 className="mb-4 text-2xl font-bold sm:text-5xl md:text-6xl">
             Greeting, Folks 👋
           </h1>
           <p className="mb-3 text-base text-zinc-700 md:text-xl dark:text-zinc-500">

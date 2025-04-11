@@ -53,7 +53,7 @@ const Navigation = () => {
       <div
         className={cn(
           'hidden items-center font-medium md:flex',
-          isHome ? 'gap-12 text-2xl' : 'gap-10 text-base md:justify-center',
+          isHome ? 'gap-12 text-2xl' : 'gap-10 text-xl md:justify-center',
         )}
       >
         {links.map(({ href, label, key }) => {
@@ -66,7 +66,8 @@ const Navigation = () => {
                 'transition-colors duration-200',
                 'hover:text-zinc-800 dark:hover:text-zinc-200',
                 'text-zinc-400 dark:text-zinc-500',
-                isActive && 'font-semibold text-black dark:text-white',
+                isActive &&
+                  'leading-1 font-semibold text-black dark:text-white',
               )}
             >
               {label}
