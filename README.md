@@ -11,6 +11,7 @@ Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
 - Responsive and accessible design.
 - Easy to use
 - [Motion-Primitives](https://motion-primitives.com) for animated components.
+- Built in syntax highlighting with [Sugar High](https://github.com/huozhi/sugar-high)
 
 ## Getting Started
 
