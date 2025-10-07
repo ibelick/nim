@@ -16,7 +16,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Design Engineer | Working at JP Morgan Chase
+          Design Engineer at JP Morgan Chase
         </TextEffect>
       </div>
     </header>

@@ -137,8 +137,8 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+          I'm a firm believer in continuous learning and enjoy collaborating with cross-functional, global teams to deliver user-centric solutions. 
+          My goal is to combine technical skill with creative problem-solving to build designs that are not only beautiful but also highly functional.
           </p>
         </div>
       </motion.section>
@@ -157,8 +157,7 @@ export default function Personal() {
               <div className="px-1">
                 <a
                   className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
-                  href={project.link}
-                  target="_blank"
+                  href={project.blogLink}
                 >
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
