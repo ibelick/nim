@@ -57,24 +57,32 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'UX Associate',
     start: '2025',
     end: 'Present',
-    link: 'https://www.jpmorgan.com/',
+    link: 'https://www.chase.com/',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'EY Studio +',
+    title: 'Sr. UX Design Consultant',
+    start: '2021',
+    end: '2025',
+    link: 'https://www.studio.ey.com/en_gl',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'UXReactor',
+    title: 'Sr. Visual Designer',
+    start: '2020',
+    end: '2021',
+    link: 'https://uxreactor.com/',
     id: 'work3',
+  },
+  {
+    company: 'Infosys',
+    title: 'Systems Engineer',
+    start: '2018',
+    end: '2020',
+    link: 'https://www.infosys.com/',
+    id: 'work4',
   },
 ]
 
@@ -110,20 +118,16 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/IpshitaChatterjee',
   },
   {
     label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://x.com/IpshitaChatter2',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.linkedin.com/in/ipshita-ch/',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'ipshita.chatterjee02@gmail.com'

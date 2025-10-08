@@ -1,10 +1,12 @@
 import type { MDXComponents } from 'mdx/types'
 import { ComponentPropsWithoutRef } from 'react'
 import { highlight } from 'sugar-high'
+import { ImpactMetrics } from '@/components/ui/impact-metrics'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
+    ImpactMetrics,
     Cover: ({
       src,
       alt,

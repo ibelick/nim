@@ -27,7 +27,7 @@ export function PasswordModal({ isOpen, onClose, onSuccess }: PasswordModalProps
       onSuccess()
       onClose()
     } else {
-      setError('Password is wrong, please drop an email at ipshita.chatterjee@gmail.com')
+      setError('Password is wrong, please drop an email at ipshita.chatterjee02@gmail.com')
     }
     
     setIsLoading(false)
