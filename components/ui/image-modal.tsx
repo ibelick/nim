@@ -38,7 +38,7 @@ export function ImageModal({ src, alt, caption }: ImageModalProps) {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="relative max-h-[90vh] max-w-[90vw]"
+              className="relative max-h-[100vh] max-w-[100vw]"
               onClick={(e) => e.stopPropagation()}
             >
               <img
@@ -51,7 +51,7 @@ export function ImageModal({ src, alt, caption }: ImageModalProps) {
                 className="fixed right-4 top-[16px] rounded-full bg-white/90 p-2 text-gray-600 hover:bg-white hover:text-gray-800"
                 style={{ right: '16px' }}
               >
-                <XIcon className="h-5 w-5" />
+                <XIcon className="h-3 w-3" />
               </button>
             </motion.div>
           </motion.div>

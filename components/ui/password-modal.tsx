@@ -58,9 +58,9 @@ export function PasswordModal({ isOpen, onClose, onSuccess }: PasswordModalProps
           >
             <button
               onClick={handleClose}
-              className="absolute right-4 top-4 rounded-full p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+              className="absolute right-4 top-4 flex h-5 w-5 items-center justify-center rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-600"
             >
-              <XIcon className="h-5 w-5" />
+              <XIcon className="h-3 w-3" />
             </button>
 
             <div className="space-y-6">
