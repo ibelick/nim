@@ -2,6 +2,14 @@
 @plugin '@tailwindcss/typography';
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-parchment: #edede9;
+  --color-bone: #d6ccc2;
+  --color-linen: #f5ebe0;
+  --color-almond-cream: #e3d5ca;
+  --color-almond-silk: #d5bdaf;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
