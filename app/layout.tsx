@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Andrii Solntsev — SEO + AI',
-    template: '%s | Andrii Solntsev'
+    default: 'Nim - Personal website template',
+    template: '%s | Nim'
   },
-  description: 'Andrii Solntsev — SEO specialist and AI practitioner.',
+  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
 };
 
 const geist = Geist({
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-linen tracking-tight antialiased dark:bg-zinc-950`}
+        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
         <ThemeProvider
           enableSystem={true}
